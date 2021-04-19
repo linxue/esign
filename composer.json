@@ -1,0 +1,24 @@
+{
+  "name": "linxue/esign",
+  "type": "library",
+  "description": "Esign Lib",
+  "keywords": [ "esign" ],
+  "homepage": "https://github.com/Linxue/esign",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Linxue",
+      "email": "mrlindaxue@sina.com",
+      "homepage": "http://linxue.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Esign\\": "/src"
+    }
+  }
+}
