@@ -4,7 +4,7 @@
  * Uri 常量
  * @desc 接口地址 从官网抓取后做了一些小变动(只是变量名有些改动而已)
  * 
- * @authors linxue (mrlindaxue@sina.com)
+ * @authors linxue (599562695@qq.com)
  * @date    2020-11-19 10:59:11
  */
 namespace Esign;
@@ -36,6 +36,7 @@ namespace Esign;
 * 删除个人印章              EURI_DELETE_PERSON_SEAL
 * 删除企业印章              EURI_DELETE_COMPANY_SEAL
 * 设置静默签署              EURI_SIGNAUTH
+* 发起企业实名认证4要素校验   EURI_IDENTITY_ORG_FOURFACTORS
 * 
 */
 
@@ -78,6 +79,10 @@ class Uri
 
 	const EURI_SIGNAUTH  = '/v1/signAuth/{accountId}' ;
 	const EURI_AUTOSIGN  = '/v1/signflows/{flowId}/signfields/autoSign' ;
+	const EURI_IDENTITY_ORG_FOURFACTORS  = '/v2/identity/auth/api/organization/enterprise/{accountId}/fourFactors' ;
+	const EURI_IDENTITY_ORG_WEB  = '/v2/identity/auth/web/{accountId}/orgIdentityUrl' ;
+	const EURI_IDENTITY_PERSON_FACE  = '/v2/identity/auth/api/individual/{accountId}/face' ;
+	const EURI_IDENTITY_PERSON_WEB  = '/v2/identity/auth/web/{accountId}/indivIdentityUrl' ;
 
 }
 

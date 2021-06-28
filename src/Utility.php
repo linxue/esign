@@ -2,7 +2,7 @@
 
 /**
  * Utility 工具类
- * @authors linxue (mrlindaxue@sina.com)
+ * @authors linxue (599562695@qq.com)
  * @date    2020-11-19 11:55:10
  */
 
@@ -17,7 +17,7 @@ class Utility
   /**
    * @name 发起POST请求
    */
-  public static function doPost( string $url, array $data=[], string $appid='', string $stoken=''): array
+  public static function doPost( string $url, array $data=[], string $appid='', string $stoken='' , $debug=false): array
   {
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
